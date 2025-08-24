@@ -18,10 +18,10 @@
         "wdl_inputs": {
           "star.input_fqs_rgs": [ {
             "Left": { "Left": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R1.fastq.gz", "Right": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R2.fastq.gz" },
-            "Right": "ID:k_4_NoIndex PL:Illumina PU:k_4_NoIndex LB:KTest SM:K_1test CM:OICR" },
+            "Right": "ID:k_4_NoIndex PL:Illumina PU:k_4_NoIndex LB:KTest SM:K_1test CN:OICR" },
             {
             "Left": { "Left": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R1.fastq.gz", "Right": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R2.fastq.gz"},
-            "Right": "ID:k_4_NoIndex PL:Illumina PU:k_4_NoIndex LB:KTest SM:K_1test CM:OICR"}]
+            "Right": "ID:k_4_NoIndex PL:Illumina PU:k_4_NoIndex LB:KTest SM:K_1test CN:OICR"}]
         }
       }
     }
