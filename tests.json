@@ -3,7 +3,7 @@
     "description": "STAR-multi workflow test",
     "metrics_calculate": "calculate.sh",
     "metrics_compare": "compare.sh",
-    "output_metrics_dir": "/.mounts/labs/gsi/testdata/STAR/output_metrics",
+    "output_metrics_dir": "/.mounts/labs/gsi/testdata/STAR-MULTI/output_metrics",
     "parameters": {
           "wdl_options": {
             "write_to_cache": false,
@@ -13,15 +13,15 @@
   },
   "tests": [
     {
-      "id": "k562_RNAseqTest",
+      "id": "workflow_test_01",
       "parameters": {
         "wdl_inputs": {
           "star.input_fqs_rgs": [ {
-            "Left": { "Left": "/.mounts/labs/gsi/testdata/STAR/input_data/k562_NoIndex_L001_R1_001.fastq.gz", "Right": "/.mounts/labs/gsi/testdata/STAR/input_data/k562_NoIndex_L001_R2_001.fastq.gz" },
-            "Right": "ID:121005_h804_0096_AD0V4NACXX_4_NoIndex PL:Illumina PU:121005_h804_0096_AD0V4NACXX_4_NoIndex LB:K562_1 SM:K562_1test CM:OICR" },
+            "Left": { "Left": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R1.fastq.gz", "Right": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R2.fastq.gz" },
+            "Right": "ID:k_4_NoIndex PL:Illumina PU:k_4_NoIndex LB:KTest SM:K_1test CN:OICR" },
             {
-            "Left": { "Left": "/.mounts/labs/gsi/testdata/STAR/input_data/k562_NoIndex_L001_R1_001.fastq.gz", "Right": "/.mounts/labs/gsi/testdata/STAR/input_data/k562_NoIndex_L001_R2_001.fastq.gz"},
-            "Right": "ID:121005_h804_0096_AD0V4NACXX_5_NoIndex PL:Illumina PU:121005_h804_0096_AD0V4NACXX_5_NoIndex LB:K562_2 SM:K562_2test CM:OICR"}]
+            "Left": { "Left": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R1.fastq.gz", "Right": "/.mounts/labs/gsi/testdata/STAR/test_inputs/kTest_R2.fastq.gz"},
+            "Right": "ID:k_4_NoIndex PL:Illumina PU:k_4_NoIndex LB:KTest SM:K_1test CN:OICR"}]
         }
       }
     }
